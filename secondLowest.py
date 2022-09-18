@@ -1,7 +1,7 @@
 #Find the 2nd Lowest Score and print Name from the list
 listl= []
 smallest = small = float('inf')
-for x in range(int(input(f"Enter Total Number of Records: "))):
+for x in range(int(input("Enter Total Number of Records: "))):
     name = input(f"Enter Name for record {x+1}: ")
     score = float(input("Enter the Score: "))
     li = [name,score]
