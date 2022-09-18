@@ -10,4 +10,4 @@ def count_substring(string, sub_string):
 string = input("Enter Test String: ").strip()
 sub_string = input("Enter Sub String: ").strip()
 count = count_substring(string, sub_string)
-print(count)
+print(f"Occurence of \"{sub_string}\" substring: {count}")
