@@ -1,21 +1,17 @@
 def binary(x):
-    dSum=dRem=0
-    bBase=1
+    dSum=''
     while(x>0):
-        dRem= x%2
-        dSum= dSum+dRem*bBase
-        bBase=bBase*10
-        x= x//2
+        dRem= str(x%2)
+        dSum= dRem+dSum
+        x= int(x/2)
     return dSum
 
 def octa(x):
-    oSum = oRem = 0
-    oBase = 1
+    oSum =''
     while(x>0):
-        oRem = x%8
-        oSum = oSum + oRem * oBase
-        oBase = oBase*10
-        x = x//8
+        oRem = str(x%8)
+        oSum = oRem + oSum
+        x = int(x/8)
     return oSum
 
 def hexa(x):
@@ -27,8 +23,8 @@ def hexa(x):
         for i in range(len(dLs)):
             if hRem == dLs[i]:
                 hRem= hLs[i]
-        hSum = str(hRem) + hSum
-        x=x//16
+        hSum = hRem + hSum
+        x=int(x/16)
     return hSum
 
 
