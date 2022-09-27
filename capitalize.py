@@ -7,6 +7,6 @@ def solve(s):
         lsl.append(x)
     return " ".join(lsl)
 
-s = input()
+s = input("Input: ")
 result = solve(s)
 print(result)
