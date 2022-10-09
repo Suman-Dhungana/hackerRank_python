@@ -3,7 +3,6 @@ listA=A.split()
 B=input()
 listB=B.split()
 ls=[]
-row=[]
 for x in listA:
     for y in listB:
         ls.append(x)
