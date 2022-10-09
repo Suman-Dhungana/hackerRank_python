@@ -20,6 +20,7 @@ def minion_game(string):
                     lis.append(strg)
                 else:
                     lik.append(strg)
+    # print(set(lis))
     score_St=countSubString(string,set(lis))
     score_Ke=countSubString(string,set(lik))
     if score_St>score_Ke:
