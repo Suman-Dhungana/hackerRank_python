@@ -1,9 +1,9 @@
 from itertools import groupby
 
 x = input()
-keyLen=[]
+compress=[]
 for k,g in groupby(x):
-    keyLen.append(len(list(g)))
-    keyLen.append(k)
+    compress.append(len(list(g)))
+    compress.append(k)
     print('(%s)' % ', '.join(map(str,keyLen)),end=" ")
-    keyLen=[]
+    compress=[]
