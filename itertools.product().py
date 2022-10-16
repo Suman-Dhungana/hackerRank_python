@@ -1,10 +1,8 @@
-A=input()
-listA=A.split()
-B=input()
-listB=B.split()
+A=input().split()
+B=input().split()
 ls=[]
-for x in listA:
-    for y in listB:
+for x in A:
+    for y in B:
         ls.append(x)
         ls.append(y)
         row= '(%s)'% ', '.join(map(str,ls))
